@@ -16,6 +16,7 @@
     "appium": "^2.15.0",
     "appium-uiautomator2-driver": "^3.10.0",
     "wdio-browserstack-service": "^0.1.19",
+    "wdio-qase-reporter": "^1.0.0-beta.1",
     "webdriverio": "^9.7.2"
   }
 }
