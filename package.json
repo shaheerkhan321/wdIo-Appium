@@ -7,14 +7,15 @@
   "dependencies": {
     "@wdio/appium-service": "^8.x",
     "@wdio/local-runner": "^9.6.0",
-    "@wdio/spec-reporter": "^8.41.0",
-    "webdriverio": "^8.41.0"
+    "@wdio/spec-reporter": "^8.41.0"
   },
   "devDependencies": {
     "@wdio/cli": "^9.6.0",
     "@wdio/cucumber-framework": "^9.6.4",
     "@wdio/mocha-framework": "^9.6.4",
     "appium": "^2.15.0",
-    "appium-uiautomator2-driver": "^3.10.0"
+    "appium-uiautomator2-driver": "^3.10.0",
+    "wdio-browserstack-service": "^0.1.19",
+    "webdriverio": "^9.7.2"
   }
 }

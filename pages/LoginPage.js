@@ -3,6 +3,7 @@ const BasePage = require('./BasePage');
 class LoginPage extends BasePage {
     async assertSilkHeadingDisplayed() {
         const silkHeading = await $('//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.ImageView[2]');
+        // silkHeading.waitForDisplayed({ timeout: 10000 });
         await expect(silkHeading).toBeDisplayed();
         console.log('Silk heading is displayed.');
     }
@@ -86,7 +87,7 @@ class LoginPage extends BasePage {
 
     async clickSkipButton() {
         const skipButton = await $('//android.view.View[@content-desc="Skip"]');
-        await browser.pause(3000); 
+        await browser.pause(6000); 
         await skipButton.waitForDisplayed({ timeout: 10000 });
         await skipButton.click();
         console.log('Clicked on the Skip button.');
